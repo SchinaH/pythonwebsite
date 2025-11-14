@@ -4,7 +4,7 @@ pipeline {
         //be sure to replace "willbla" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "schinah/pythonwebsite"
         ARCH = 'amd64'
-        DOCKER_ACCESS_TOKEN = credentials('docker-access-token')
+        DOCKER_ACCESS_TOKEN = credentials('docker_hub_token')
         DOCKER_ACCOUNT = credentials('schinah')
         CLOUD_BUILDER_NAME = 'schinah'
         IMAGE_NAME = 'IMAGE'
