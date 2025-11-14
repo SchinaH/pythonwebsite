@@ -4,6 +4,7 @@ pipeline {
         //be sure to replace "willbla" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "schinah/pythonwebsite"
     }
+     stages {
         stage('Build Docker Image') {
             when {
                 branch 'master'
